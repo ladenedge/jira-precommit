@@ -5,7 +5,7 @@ using System.ServiceModel;
 using Atlassian.Jira;
 using NLog;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     class Program
     {

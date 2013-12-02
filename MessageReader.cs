@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Text.RegularExpressions;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     public class MessageReader
     {

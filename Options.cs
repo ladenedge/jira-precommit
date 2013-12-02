@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using NDesk.Options;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     class Options
     {

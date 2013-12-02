@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace DigiData.SVN.JiraPrecommit.Tests
+namespace DigiData.JiraPrecommit.Tests
 {
     public class AtlassianException_Tests
     {

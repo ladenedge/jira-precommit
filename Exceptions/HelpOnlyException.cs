@@ -21,7 +21,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     /// <summary>
     /// The exception that is thrown when the user only

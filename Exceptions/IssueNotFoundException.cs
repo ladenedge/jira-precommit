@@ -23,7 +23,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text.RegularExpressions;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     /// <summary>
     /// The exception that is thrown when an invalid query is issued.

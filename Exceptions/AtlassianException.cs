@@ -23,7 +23,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text.RegularExpressions;
 
-namespace DigiData.SVN.JiraPrecommit
+namespace DigiData.JiraPrecommit
 {
     /// <summary>
     /// A base class for exceptions thrown by the Atlassian SDK.
