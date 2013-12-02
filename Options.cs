@@ -28,7 +28,7 @@ namespace DigiData.JiraPrecommit
    	            { "m|message=", "The commit message to validate ('-' or leave blank for stdin)", v => Message = v },
    	            { "p|password=", "The JIRA password to use (required)", v => Password = v },
    	            { "u|username=", "The JIRA username to use (required)", v => Username = v },
-   	            { "v|verbose", "Enable verbose logging", v => Verbose = true },
+   	            { "v|verbose", "Enable verbose output", v => Verbose = true },
                 { "?|h|help", "Show this help message.", v => show_help = true },
             };
 

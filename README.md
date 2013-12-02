@@ -2,24 +2,26 @@
 jira-precommit
 ==
 
-This application parses source control commit messages for JIRA
-issue keys (eg. 'ABC-123') and validates the state of those issues
-using [Atlassian's SDK](http://www.nuget.org/packages/Atlassian.SDK).
+*jira-precommit* is a .NET 4.0 application parses source control
+commit messages for JIRA issue keys (eg. 'ABC-123') and validates
+the state of those issues using
+[Atlassian's .NET SDK](http://www.nuget.org/packages/Atlassian.SDK).
 
 A return value of 0 indicates the issue was found in JIRA, and that
-it was in an 'open' state (see Configuration, below).  Otherwise the
-application will have a return value greater than 0.
+it was in an 'open' state (see below).  Otherwise the application
+will have a return value greater than 0.
 
 Configuration
 --
 
-jira-precommit requires some brief configuration in its
-**jira-precommit.config** file.  Here are the options:
+jira-precommit will require some brief configuration in its
+**jira-precommit.config** file for most users.  Here are the options:
 
 * `IssueRegex`: the regular expression used to find issue keys.
+  This will probably work as-is for most installations.
 * `ClosedStatuses`: a comma-separated list of statuses that issues
   may *not* have if they are mentioned in commit messages.  If you
-  don't want to require that mentioned issues be open, you may
+  don't want to require that mentioned issues be "open," you may
   leave this setting blank.
 
 Error, status and verbose logging messages all appear on STDERR to
@@ -38,7 +40,7 @@ jira-precommit uses several command line options to connect to JIRA.
                                    blank for stdin)
     -p, --password=VALUE       The JIRA password to use (required)
     -u, --username=VALUE       The JIRA username to use (required)
-    -v, --verbose              Enable verbose logging
+    -v, --verbose              Enable verbose output
     -?, -h, --help             Show this help message.
 
 As SVN Precommit Hook
