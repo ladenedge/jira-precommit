@@ -2,9 +2,9 @@
 jira-precommit
 ==
 
-*jira-precommit* is a .NET 4.0 application parses source control
-commit messages for JIRA issue keys (eg. 'ABC-123') and validates
-the state of those issues using
+**jira-precommit** is a .NET 4.0 application that parses source
+control commit messages for JIRA issue keys (eg. 'ABC-123') and
+validates the state of those issues using
 [Atlassian's .NET SDK](http://www.nuget.org/packages/Atlassian.SDK).
 
 A return value of 0 indicates the issue was found in JIRA, and that
