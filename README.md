@@ -1,5 +1,6 @@
 
-= jira-precommit
+jira-precommit
+==
 
 This application parses source control commit messages for JIRA
 issue keys (eg. 'ABC-123') and validates the state of those issues
@@ -9,7 +10,8 @@ A return value of 0 indicates the issue was found in JIRA, and that
 it was in an 'open' state (see Configuration, below).  Otherwise the
 application will have a return value greater than 0.
 
-== Configuration
+Configuration
+--
 
 jira-precommit requires some brief configuration in its
 **jira-precommit.config** file.  Here are the options:
@@ -26,7 +28,8 @@ the config file according to the [NLog](http://nlog-project.org/)
 [Console Target](https://github.com/nlog/NLog/wiki/Console%20Target)
 rules.
 
-== Command Line
+Command Line
+--
 
 jira-precommit uses several command line options to connect to JIRA.
 
@@ -38,7 +41,8 @@ jira-precommit uses several command line options to connect to JIRA.
     -v, --verbose              Enable verbose logging
     -?, -h, --help             Show this help message.
 
-== As SVN Precommit Hook
+As SVN Precommit Hook
+--
 
 To use jira-precommit as an SVN precommit hook, pipe the output of
 svnlook to the application.
